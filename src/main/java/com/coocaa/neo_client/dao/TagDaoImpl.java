@@ -17,7 +17,7 @@ public class TagDaoImpl implements TagDao {
         RestTemplate restTemplate = new RestTemplate();
         System.out.println("####################");
         System.out.println(initConfig.getCoocaa_pyneo_url());
-        System.out.println("###################");
+        System.out.println("####################");
         return restTemplate.getForObject(initConfig.getCoocaa_pyneo_url()+"?name={1}", Tag.class,name);
     }
 }
